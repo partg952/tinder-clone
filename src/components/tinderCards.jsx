@@ -9,7 +9,7 @@ function TinderCards() {
   console.log(data)
   useEffect(()=>{
     const GetData = async() =>{
-      const result = await axios('https://randomuser.me/api/?results=100')
+      const result = await axios('https://randomuser.me/api/?results=50')
       console.log(result.data)
       setData(result.data.results)
     }
